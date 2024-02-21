@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_mini_comp_report_tabs",
+  "info": {
+    "displayName": "ReportTab",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "TabTitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "ReportFile": {
+      "displayName": "ReportFile",
+      "type": "component",
+      "repeatable": true,
+      "component": "mini-comp.report-file",
+      "min": 1,
+      "required": true,
+      "max": 10
+    }
+  }
+}

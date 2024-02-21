@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_seos",
+  "info": {
+    "displayName": "seo",
+    "icon": "server",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "metaSocial": {
+      "displayName": "metaSocial",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.meta-social",
+      "required": true
+    },
+    "keywords": {
+      "type": "text",
+      "required": true,
+      "maxLength": 200
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true,
+      "maxLength": 200
+    }
+  }
+}

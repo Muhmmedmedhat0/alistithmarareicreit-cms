@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_page_comp_reports",
+  "info": {
+    "displayName": "Reports",
+    "icon": "folder"
+  },
+  "options": {},
+  "attributes": {
+    "ReportTab": {
+      "displayName": "ReportTab",
+      "type": "component",
+      "repeatable": true,
+      "component": "mini-comp.report-tab",
+      "required": true,
+      "max": 2,
+      "min": 2
+    }
+  }
+}
