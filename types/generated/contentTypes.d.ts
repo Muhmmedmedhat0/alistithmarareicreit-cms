@@ -432,6 +432,11 @@ export interface ApiTaskTask extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     status: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<false>;
+    user: Attribute.Relation<
+      'api::task.task',
+      'manyToOne',
+      'plugin::users-permissions.user'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
